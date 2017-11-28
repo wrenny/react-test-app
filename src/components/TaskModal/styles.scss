@@ -1,0 +1,72 @@
+.container {
+	padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.textarea, .input, .btn {
+	border:none;
+	outline: 0;
+	margin:8px 2px;
+	font-size: 1em;
+}
+
+.textarea , .input {
+	width: 100%;
+	min-width: 300px;
+	padding:0.5em;
+	display: block;
+	height:2em;
+	border-bottom: 2px solid #ddd;
+	&:focus {
+		background: #f2f2f2;
+	}
+}
+
+.textarea {
+	min-height: 200px;
+}
+
+.btn {
+	display: block;
+	opacity: 0.7;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.bgCancel, .bgSuccess {
+	padding:0.25em 0.55em;
+	font-size: 1.3em;
+	& i {
+		font-size: 1.2em;
+	}
+	font-variant:small-caps;
+}
+
+.bgCancel {
+  color: #333;
+  position: absolute;
+  background: #fff;
+  right: 5px;
+  top: 0;
+  padding:0 0.25em;
+	&:active {
+ 		transition: color 0.1s linear;
+		color: rgba(100, 100, 100, 0.6)
+	}
+}
+
+.bgSuccess {
+  width: 100%;
+  color: #f2f2f2;
+  background: #1abc9c;
+  transition: background 0.6s linear;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+ 	&:active {
+ 		transition: background 0.1s linear;
+		background: rgba(26,188,156, 0.6);
+	}
+}

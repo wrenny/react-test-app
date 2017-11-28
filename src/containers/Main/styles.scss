@@ -1,0 +1,14 @@
+.loading, .loaded {
+	background: #ECF0F1;
+	min-height: 100vh;
+}
+
+.loading {
+  opacity: 0;
+  transition:all 0.25s linear;
+}
+
+.loaded {
+  opacity: 1;
+  transition:all 0.25s linear;
+}
